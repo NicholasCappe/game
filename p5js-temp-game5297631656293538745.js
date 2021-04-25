@@ -42,7 +42,7 @@ function levelOne(){
     score = score + 1;
   }
   
-    if(score>=10){
+    if(score>=1){
     gameState = "L2";
 }
   
@@ -62,7 +62,7 @@ function levelTwo(){
     score = score + 1;
   }
   
-    if(score>=20){
+    if(score>=2){
     gameState = "L3";
 }
   
@@ -83,7 +83,7 @@ function levelThree(){
     score = score + 1;
   }
   
-    if(score>=30){
+    if(score>=3){
     gameState = "F";
 }
   
@@ -97,7 +97,7 @@ function levelThree(){
 function levelFinish(){
   background(200); 
   text("Success! No more levels", width/2,height-20);
-  var distToBall = dist(ballx,bally,mouseX,mouseY);
+  var distToBall = dist(20,20,mouseX,mouseY);
   if(distToBall < ballSize/10){
     ballx = 20;
     bally = 20;
